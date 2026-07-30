@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><span>Sayuri Senara</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <a
+        href="https://github.com/SayuriSenara"
+        target="_blank"
+        class="visit-btn"
+        >Visit GitHub</a
+      >
+    </header>
+
+    <section id="home" class="home">
+      <div class="home-container">
+        <img src="images/image1.jpg" alt="" />
+
+        <div class="info-box">
+          <div class="text">
+            <h3>Hi, I'm</h3>
+            <h1>Sayuri Senara</h1>
+            <span id="typing-text"></span>
+          </div>
+
+          <div class="btn-group">
+            <a href="documents/Sayuri Senara CV.pdf" download class="btn">
+              Download CV
+            </a>
+
+            <a href="#contact" class="btn"> Contact Me </a>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/SayuriSenara" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sayuri-senara" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:sayurisenaraa7@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am a Computer Science undergraduate at the University of
+            Westminster (affiliated with the Informatics Institute of
+            Technology) with a strong passion for software engineering and
+            full-stack web development. My academic journey has provided
+            hands-on experience in designing and developing responsive web
+            applications, RESTful APIs, and mobile applications using modern
+            technologies. I enjoy solving real-world problems through software
+            solutions and continuously expanding my knowledge in emerging
+            technologies. Through university projects, I have developed systems
+            ranging from IoT-powered mobile applications to React-based web
+            applications and enterprise-style RESTful APIs. These experiences
+            have strengthened my problem-solving, teamwork, communication, and
+            software development skills. I am currently seeking opportunities to
+            further develop my expertise, contribute to innovative projects, and
+            build a successful career in software engineering.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat">
+            <h3>5+</h3>
+            <span>Projects Completed</span>
+          </div>
+
+          <div class="stat">
+            <h3>5+</h3>
+            <span>Technologies Used</span>
+          </div>
+
+          <div class="stat">
+            <h3>2+</h3>
+            <span>Years of Learning</span>
+          </div>
+        </div>
+
+        <div class="skills-container">
+          <!-- Programming Languages -->
+          <div class="skill-card">
+            <h3>
+              <i class="fa-solid fa-code"></i>
+              Programming Languages
+            </h3>
+
+            <div class="skill-tags">
+              <span>Java</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>Dart</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card">
+            <h3>
+              <i class="fa-solid fa-database"></i>
+              Databases
+            </h3>
+
+            <div class="skill-tags">
+              <span>MySQL</span>
+              <span>Firebase</span>
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+
+          <!-- Web & Mobile -->
+          <div class="skill-card">
+            <h3>
+              <i class="fa-solid fa-laptop-code"></i>
+              Web & Mobile Development
+            </h3>
+
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Bootstrap</span>
+              <span>React.js</span>
+              <span>REST APIs</span>
+              <span>Flutter</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card">
+            <h3>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              Tools & Frameworks
+            </h3>
+
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Postman</span>
+              <span>JAX-RS</span>
+              <span>Maven</span>
+              <span>Netlify</span>
+              <span>Figma</span>
+              <span>Canva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-container">
+        <!-- KidCloud -->
+        <div class="project-card">
+          <img
+            src="images/kidcloud.jpg"
+            alt="KidCloud Smart Child Safety System"
+          />
+
+          <div class="tech-stack">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Firebase</span>
+            <span>Google Maps API</span>
+            <span>IoT</span>
+          </div>
+
+          <h3>KidCloud Smart Child Safety System</h3>
+
+          <p>
+            IoT-based child safety solution featuring real-time GPS tracking,
+            geofencing alerts, and a Flutter mobile application for enhanced
+            child safety monitoring.
+          </p>
+
+          <div class="project-links">
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a
+              href="https://github.com/hirusha-kiranidu/KidCloud-child-safety-system"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Estate Agent -->
+        <div class="project-card">
+          <img
+            src="images/estate-agent-spa.jpg"
+            alt="Estate Agent Property Search SPA"
+          />
+
+          <div class="tech-stack">
+            <span>React.js</span>
+            <span>JavaScript</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Jest</span>
+            <span>Netlify</span>
+          </div>
+
+          <h3>Estate Agent Property Search SPA</h3>
+
+          <p>
+            Responsive property search application featuring advanced filtering,
+            favourites management, dynamic property details, and modern React
+            component architecture.
+          </p>
+
+          <div class="project-links">
+            <a href="https://amazing-pie-7478bc.netlify.app/" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a
+              href="https://github.com/SayuriSenara/finalcoursework-react"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Smart Campus API -->
+        <div class="project-card">
+          <img src="images/smart-campus-api.jpg" alt="Smart Campus REST API" />
+
+          <div class="tech-stack">
+            <span>Java</span>
+            <span>JAX-RS</span>
+            <span>Maven</span>
+            <span>REST API</span>
+            <span>JSON</span>
+            <span>Postman</span>
+          </div>
+
+          <h3>Smart Campus REST API</h3>
+
+          <p>
+            RESTful API for managing rooms, sensors, and sensor readings with
+            CRUD operations, filtering, validation, exception handling, and
+            JSON-based communication.
+          </p>
+
+          <div class="project-links">
+            <a href="#" target="_blank">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a
+              href="https://github.com/SayuriSenara/SmartCampus-API"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-container">
+        <!-- Degree -->
+        <div class="education-card">
+          <div class="edu-header">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>BSc (Hons) Computer Science</h3>
+          </div>
+
+          <h4>
+            University of Westminster | Informatics Institute of Technology
+            (IIT)
+          </h4>
+
+          <div class="module-group">
+            <h5>Level 5 Modules</h5>
+            <ul>
+              <li>Software Development Group Project</li>
+              <li>Object-Oriented Programming</li>
+              <li>Database Systems</li>
+              <li>Client Server Architecture</li>
+              <li>Advanced Client Side Development</li>
+              <li>Server Side Web Development</li>
+            </ul>
+          </div>
+
+          <div class="module-group">
+            <h5>Level 4 Modules</h5>
+            <ul>
+              <li>Software Development I (Python)</li>
+              <li>Mathematics for Computing</li>
+              <li>Trends in Computer Science</li>
+              <li>Computer Systems Fundamentals</li>
+              <li>Software Development II (Java)</li>
+              <li>Web Design & Development</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Foundation -->
+        <div class="education-card">
+          <div class="edu-header">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>Foundation Certificate in Higher Education</h3>
+          </div>
+
+          <h4>Informatics Institute of Technology (IIT)</h4>
+
+          <p>
+            Successfully completed the Foundation Certificate programme,
+            establishing a strong academic foundation for undergraduate studies
+            in Computer Science.
+          </p>
+        </div>
+
+        <!-- School -->
+        <div class="education-card">
+          <div class="edu-header">
+            <i class="fa-solid fa-school"></i>
+            <h3>Government Science College - Matale</h3>
+          </div>
+
+          <ul class="school-results">
+            <li>G.C.E. Ordinary Level (2017) - Nine "A" Passes</li>
+            <li>G.C.E. Advanced Level - Bio Science Stream</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="contact-container">
+        <!-- Contact Information Card -->
+        <div class="contact-card">
+          <h3>Get In Touch</h3>
+
+          <p>
+            Feel free to reach out for internship opportunities, collaborations,
+            projects, or professional networking.
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+
+              <div>
+                <h4>Email</h4>
+                <span>sayurisenaraa7@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+
+              <div>
+                <h4>Phone</h4>
+                <span>+94 70 139 6964</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <div>
+                <h4>Location</h4>
+                <span>Dambulla, Sri Lanka</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-card">
+          <h3>Send a Message</h3>
+
+          <form id="contact-form" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+
+            <input type="text" name="title" placeholder="Subject" required />
+
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+
+            <p id="form-message"></p>
+          </form>
+
+          <!-- <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+
+            <input type="email" placeholder="Your Email" required />
+
+            <input type="text" placeholder="Subject" required />
+
+            <textarea rows="6" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+          </form> -->
+        </div>
+      </div>
+
+      <!-- Social Links -->
+
+      <div class="social-section">
+        <h3>Connect With Me</h3>
+
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/sayuri-senara-0b2b8b20a/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://www.instagram.com/sayusenara/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/share/1DaXN4P18E/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="mailto:sayurisenaraa7@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Sayuri Senara</h3>
+          <p>Computer Science Undergraduate & Full-Stack Developer</p>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Designed & Developed by Sayuri Senara.</p>
+        <br />
+        <p>© 2025-2026 Sayuri Senara. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <button id="topBtn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
